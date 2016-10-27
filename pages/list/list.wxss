@@ -1,0 +1,15 @@
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+page,.myContainer,scroll-view{
+    height: 100%
+}

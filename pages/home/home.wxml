@@ -1,0 +1,107 @@
+<view class="myContainer">
+  <view class="nav">
+    <ul bindtap="handleTapEvent">
+      <!--data-index给这个事件对象传参数 {{支持表达式}}-->
+      <li class="{{currentIndex==0?'active':''}}" data-index="0">男装展示</li>
+      <li class="{{currentIndex==1?'active':''}}" data-index="1">女装展示</li>
+      <li class="{{currentIndex==2?'active':''}}" data-index="2">老年展示</li>
+    </ul>
+  </view>
+
+  <view class="content">
+    <!--current:当前所在页面的 index,duration:滑动动画时长,bindchange:	current 改变时会触发 change 事件-->
+    <swiper current="{{currentIndex}}" duration="500" bindchange="handleChangeEvent">
+      <swiper-item>
+        <scroll-view scroll-y="true">
+          <ul>
+            <li>
+              <image mode="aspectFit" src="images/img1.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img2.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img3.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img4.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img5.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img6.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <scroll-view scroll-y="true">
+          <ul>
+            <li>
+              <image mode="aspectFit" src="images/img7.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img8.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img9.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img10.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img11.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img12.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <scroll-view scroll-y="true">
+          <ul>
+            <li>
+              <image mode="aspectFit" src="images/img12.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img14.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img15.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img16.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img17.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+            <li>
+              <image mode="aspectFit" src="images/img18.jpg"></image>
+              <p>微信小程序标题</p>
+            </li>
+          </ul>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+</view>
